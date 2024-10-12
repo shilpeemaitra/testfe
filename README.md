@@ -81,53 +81,20 @@ Create a **Pokémon explorer app** that allows users to browse and view detailed
 - Include Pokémon name, image, type(s), abilities, and stats (HP, Attack, etc.).
 - Ensure the app is **fully responsive**.
 
-#### Bonus Points:
+##My notes:
 
-- Add sorting and filtering by name, type, or base experience.
-- Implement search functionality that filters Pokémon by name.
+import PokemonList -> This imports the PokemonList component, likely a component that fetches and displays Pokémon data based on user input.
 
----
 
-### Senior Level
+function Home(), this is the main component for the page, representing the homepage layout.
+This component returns JSX with a main <main> section, which includes a title and the PokemonList component.
 
-#### Task:
+JSX Structure:
 
-Build an advanced **Pokémon team management app** that allows users to create and manage a team of Pokémon.
-
-#### Requirements:
-
-- Implement **authentication** (mock authentication is sufficient).
-- Allow users to add Pokémon to a team (max 6 per team) and view detailed stats for each team member.
-- Display evolution chain, stats, abilities, and moves for each Pokémon.
-- Allow users to save and manage multiple teams.
-- Implement **client-side routing** using React Router.
-- Use a state management solution like **Context API** or **Redux**.
-
-#### Bonus Points:
-
-- Add drag-and-drop functionality to reorder Pokémon in the team.
-- Include unit and integration testing.
-- Use a data-fetching library like **React Query** for caching and efficient API calls.
-- Implement **Dark Mode** and **Light Mode** toggle.
-
----
-
-## Submission Guidelines
-
-- Fork this repository and submit your solution via a **GitHub repository** link (preferred) or a **zip file**.
-- Make sure to include a **README** in your submission with:
-  - Setup instructions.
-  - Explanation of your approach.
-  - Any challenges or trade-offs you encountered.
-
----
-
-## Evaluation Criteria
-
-- **Code Quality**: We will evaluate your use of clean code practices, meaningful variable names, and comments where necessary.
-- **Responsiveness**: The app should work well on both mobile and desktop devices.
-- **Functionality**: Ensure that all required features work as expected.
-- **Best Practices**: We value the use of best practices in React development, such as proper naming, state management, and component organization.
-- **Testing**: Testing is a big part of modern development, so will value the use of testing in your solution.
-- **Creativity**: Feel free to add any additional features or enhance the design beyond the requirements.
-- **Willingness**: We want people who go the extra mile in everything they do.
+The main element uses Tailwind CSS utility classes for styling:
+flex: Enables flexbox layout.
+min-h-screen: Ensures the main section takes at least the full height of the viewport.
+flex-col: Arranges flex items in a column layout.
+items-center: Centers items horizontally.
+justify-between: Spaces out items with space between them.
+p-24: Adds padding around the element (likely 24 pixels based on Tailwind’s spacing scale).
