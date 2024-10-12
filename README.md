@@ -84,16 +84,20 @@ Create a **Pokémon explorer app** that allows users to browse and view detailed
 ##My notes:
 
 I used the directive "use client" to enable client-side rendering, which allows the page to handle dynamic elements like user input and API calls directly in the browser.
+
 Component-Based Structure
 I organized the code into components for better clarity and maintenance.
 For example, the Home component acts as the main layout, while a separate PokemonList component manages the search bar, API calls to the PokeAPI, and displays Pokémon details.
 This separation of concerns makes the application easier to understand and update.
+
 Responsive Layout with Tailwind CSS
 I applied Tailwind CSS classes in the JSX for styling, ensuring the app is responsive and adapts to different screen sizes.
 I used utility classes like flex, min-h-screen, and p-24 to manage layout and spacing, giving the app a polished and consistent look on both mobile and desktop devices.
+
 Direct User Feedback through Search
 The PokemonList component includes a search bar that allows users to input queries, fetching and displaying Pokémon data from the PokeAPI in real-time.
 This feature creates an interactive experience, making the app dynamic and engaging.
+
 Summary
 In summary, I combined client-side rendering, a component-based structure, and Tailwind CSS to create a responsive and interactive Pokémon search app. This approach ensures modular code, enhances user experience with real-time search, and prioritizes mobile responsiveness for greater accessibility.
 justify-between: Spaces out items with space between them.
